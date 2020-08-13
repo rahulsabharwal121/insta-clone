@@ -1,5 +1,4 @@
 import React ,{useState, useEffect} from 'react'
-import './App.css';
 import Post from './Posts.js'
 import { db, auth } from './firebase'
 import {makeStyles} from '@material-ui/core/styles'
