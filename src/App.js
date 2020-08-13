@@ -1,6 +1,7 @@
 import React ,{useState, useEffect} from 'react'
 import Post from './Posts.js'
 import './App.css'
+import logo from './Assets/instalogo.svg'
 import { db, auth } from './firebase'
 import {makeStyles} from '@material-ui/core/styles'
 import Modal from '@material-ui/core/Modal'
@@ -104,7 +105,7 @@ function App() {
         <div style={modalStyle} className={classes.paper}>
       <form className="app__signup"> 
       <center>
-          <img className="app_headerImage" src="./Assets/instalogo.svg"  alt="logo"/>
+          <img className="app_headerImage" src={logo} alt="logo"/>
           </center>
           
           <Input
@@ -136,7 +137,7 @@ function App() {
         <div style={modalStyle} className={classes.paper}>
       <form className="app__signup"> 
       <center>
-          <img className="app_headerImage" src="./Assets/instalogo.svg"  alt="logo"/>
+          <img className="app_headerImage" src={logo}  alt="logo"/>
           </center>
           
           <Input
@@ -157,7 +158,7 @@ function App() {
       </Modal>
   
     <div className="app_header">
-      <img className="app_headerImage" src="/Assets/instalogo.svg"  alt="logo"/>
+      <img className="app_headerImage" src={logo}  alt="logo"/>
     </div>
     {user ? (
             <Button onClick={()=> auth.signOut()}>
