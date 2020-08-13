@@ -179,10 +179,7 @@ function App() {
 
          <Post key={id} username={post.username} caption={" "+post.caption} imageurl={post.imageurl} />
   )) 
-    }
-
-    <h1>Start Instagram 🚀</h1>
-    
+    }    
     </div>
   );
 }
